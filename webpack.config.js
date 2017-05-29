@@ -6,15 +6,14 @@ const pkg = require('./package.json');
 
 module.exports = {
   entry: {
-    lib: ['./']
+    widgetA: ['./']
   },
 
-  externals: Object.keys(pkg.dependencies),
 
   output: {
     path: resolve(__dirname, 'dist'),
     filename: '[name].js',
-    library: 'widgetB',
+    library: 'widgetA',
     libraryTarget: 'umd'
   },
 
